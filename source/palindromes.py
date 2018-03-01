@@ -19,7 +19,38 @@ def is_palindrome(text):
 
 def is_palindrome_iterative(text):
     # TODO: implement the is_palindrome function iteratively here
-    pass
+
+    #if text is empty, return True #base case
+    if text.lower() == "":
+        return True
+    if len(text) == 1:
+        return True
+  
+
+    #clean text for analyzing
+    new_text = text.replace(',', '').replace('!', '').replace('.', '').replace(' ', '').replace('-', '').replace('?', '').replace('\'', '').lower()
+    
+    
+    #reverse splices original text into new array
+    back_text = new_text[::-1]
+  
+    
+    #creating index counter for text indices
+    index = 0
+
+    #while index in the range of the text length
+    while index < len(new_text):
+        #if each string has the same character as the same index
+        if new_text[index] == back_text[index]:
+            #check the next character
+            index += 1
+        #if we get through all of the characters, it is a palindrome
+        elif new_text[index] != back_text[index]:
+            return False
+
+    return True
+    
+
     # once implemented, change is_palindrome to call is_palindrome_iterative
     # to verify that your iterative implementation passes all tests
 
