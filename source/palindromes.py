@@ -51,8 +51,8 @@ def is_palindrome_iterative(text):
     return True
     
 
-    # once implemented, change is_palindrome to call is_palindrome_iterative
-    # to verify that your iterative implementation passes all tests
+    #once implemented, change is_palindrome to call is_palindrome_iterative
+    #to verify that your iterative implementation passes all tests
 
 
 def is_palindrome_recursive(text, left=None, right=None):
