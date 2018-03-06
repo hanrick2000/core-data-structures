@@ -31,7 +31,9 @@ class LinkedStack(object):
 
     def push(self, item):
         """Insert the given item on the top of this stack.
-        Running time: O(???) – Why? [TODO]"""
+        Running time: O(1) – Why? Is time efficient compared to array
+        because I am prepend. It's a matter of reassigning pointers
+        instead of moving items."""
         # TODO: Push given item
         
         #prepending at head
@@ -49,7 +51,9 @@ class LinkedStack(object):
     def pop(self):
         """Remove and return the item on the top of this stack,
         or raise ValueError if this stack is empty.
-        Running time: O(???) – Why? [TODO]"""
+        Running time: O(1) – Why? We always know where the first node
+        is LL is because it is saved to the self.head variable. Easy to access 
+        and remove."""
         # TODO: Remove and return top item, if any
         
         if not self.list.is_empty():
@@ -97,7 +101,8 @@ class ArrayStack(object):
 
     def push(self, item):
         """Insert the given item on the top of this stack.
-        Running time: O() – Why? [TODO]"""
+        Running time: O(1) – Why? Appending at the end of arrays are
+        time efficient because we already know where the end is located."""
         # TODO: Insert given item
         self.list.append(item)
 
@@ -116,9 +121,11 @@ class ArrayStack(object):
     def pop(self):
         """Remove and return the item on the top of this stack,
         or raise ValueError if this stack is empty.
-        Running time: O(???) – Why? [TODO]"""
+        Running time: O(1) – Why? We can get the last item in an
+        array without traversing through the whole list(unlike LL) so
+        all we have to do is use the pop method."""
         # TODO: Remove and return top item, if any
-        if self.is_empty() is False:
+        if self.is_empty()
             return self.list.pop()
         else:
             raise ValueError("empty array.")
