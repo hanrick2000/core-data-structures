@@ -9,26 +9,26 @@ def contains(text, pattern):
         return True
     #start iterating at index 0
     text_index = 0
-    print(text)
-    print(pattern)
 
     #don't icrement for more than the pattern length
-    while text_index < len(pattern) :
+    while text_index < len(text) :
         #check that the index of both strings match
         if text[text_index] == pattern[text_index]:
             #go to the next character to check validity
             text_index += 1
         return True
     #in case the pattern is at the end of the text
-        while text_index < len(text):
-        #check the pattern at the index
-            if text[text_index] != pattern[0]:
-            #increment text_index in case pattern is in another place
-                text_index += 1
-            #check the rest of the string after the current index 
-                return contains(text, pattern[text_index:])  
+    while text_index < len(text):
+    #check the pattern at the index
+        if text[text_index] != pattern[0]:
+        #increment text_index in case pattern is in another place
+            text_index += 1
+        #check the rest of the string after the current index 
+            return contains(text, pattern[text_index:])  
             return True
-    return False 
+        else:
+            return False
+                
 
 
 def find_index(text, pattern):
@@ -37,7 +37,9 @@ def find_index(text, pattern):
     assert isinstance(text, str), 'text is not a string: {}'.format(text)
     assert isinstance(pattern, str), 'pattern is not a string: {}'.format(text)
     # TODO: Implement find_index here (iteratively and/or recursively)
-    pass
+    # if self.contains(text, pattern):
+
+
     
 def find_all_indexes(text, pattern):
     """Return a list of starting indexes of all occurrences of pattern in text,

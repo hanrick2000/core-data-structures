@@ -1,0 +1,21 @@
+{
+  "binarytree_test.py::BinarySearchTreeTest::test_items_in_order_with_3_strings": true,
+  "binarytree_test.py::BinarySearchTreeTest::test_items_in_order_with_7_numbers": true,
+  "binarytree_test.py::BinarySearchTreeTest::test_items_level_order_with_3_strings": true,
+  "binarytree_test.py::BinarySearchTreeTest::test_items_level_order_with_7_numbers": true,
+  "binarytree_test.py::BinarySearchTreeTest::test_items_post_order_with_3_strings": true,
+  "binarytree_test.py::BinarySearchTreeTest::test_items_post_order_with_7_numbers": true,
+  "binarytree_test.py::BinarySearchTreeTest::test_items_pre_order_with_3_strings": true,
+  "binarytree_test.py::BinarySearchTreeTest::test_items_pre_order_with_7_numbers": true,
+  "binarytree_test.py::BinarySearchTreeTest::test_search_with_3_items": true,
+  "binarytree_test.py::BinarySearchTreeTest::test_search_with_3_strings": true,
+  "binarytree_test.py::BinarySearchTreeTest::test_search_with_7_items": true,
+  "binarytree_test.py::BinarySearchTreeTest::test_search_with_7_strings": true,
+  "strings.py::test_string_algorithms": true,
+  "strings_test.py::StringsTest::test_contains_with_non_matching_patterns": true,
+  "strings_test.py::StringsTest::test_find_all_indexes_with_complex_patterns": true,
+  "strings_test.py::StringsTest::test_find_all_indexes_with_matching_patterns": true,
+  "strings_test.py::StringsTest::test_find_all_indexes_with_non_matching_patterns": true,
+  "strings_test.py::StringsTest::test_find_index_with_complex_patterns": true,
+  "strings_test.py::StringsTest::test_find_index_with_matching_patterns": true
+}
