@@ -78,8 +78,10 @@ class LinkedList(object):
         # Check if the given index is out of range and if so raise an error
        
         # TODO: Find the node at the given index and return its data
+        
         #start at head
         node = self.head
+       
         #for index comparison
         node_index = 0
 
